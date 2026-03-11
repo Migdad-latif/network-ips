@@ -1,0 +1,17 @@
+{
+  "Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv": {
+    "precision": 0.9531,
+    "recall": 0.9914,
+    "f1_score": 0.9719,
+    "false_positive_rate": 0.0608,
+    "false_negative_rate": 0.0086,
+    "auc_roc": 0.9617,
+    "true_positives": 157562,
+    "false_positives": 7749,
+    "true_negatives": 119788,
+    "false_negatives": 1368,
+    "total_samples": 286467,
+    "total_attacks": 158930,
+    "total_benign": 127537
+  }
+}
