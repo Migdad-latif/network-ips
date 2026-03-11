@@ -1,0 +1,35 @@
+networks:
+  lab_net:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/24
+
+services:
+
+  victim:
+    build: ./docker/victim
+    container_name: ips_victim
+    networks:
+      lab_net:
+        ipv4_address: 172.20.0.10
+    ports:
+      - "8080:80"
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+    volumes:
+      - ./logs:/app/logs
+      - ./results:/app/results
+
+  attacker:
+    build: ./docker/attacker
+    container_name: ips_attacker
+    networks:
+      lab_net:
+        ipv4_address: 172.20.0.20
+    depends_on:
+      - victim
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
