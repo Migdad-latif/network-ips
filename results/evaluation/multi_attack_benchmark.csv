@@ -1,0 +1,5 @@
+source_file,attack_class,flows,detected,precision,recall,f1_score
+Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv,BENIGN,127537,115234,0.5876,0.9035,0.7121
+Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv,PORT_SCAN,158930,78067,0.9905,0.4912,0.6567
+Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv,DDOS,0,0,0.0,0.0,0.0
+Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv,BOTNET,0,0,0.0,0.0,0.0
